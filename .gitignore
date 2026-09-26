@@ -1,0 +1,78 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code settings (can contain SFTP/FTP credentials, e.g. .vscode/sftp.json)
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ---------------------------------------------------------------------------
+# Secrets: never commit these. Only the *.example files are published.
+# ---------------------------------------------------------------------------
+# Real database credentials (template: backend/config/db.local.example.php)
+backend/config/db.local.php
+
+# Environment files (template: .env.example)
+.env
+.env.*
+!.env.example
+
+# Android signing keys and machine-specific SDK paths
+*.jks
+*.keystore
+key.properties
+local.properties
+
+# DuckDNS update scripts contain your DuckDNS token
+duck.bat
+duck.sh
+
+# FTP/SFTP client exports (FileZilla, WinSCP)
+*.xml.filezilla
+FileZilla*.xml
+WinSCP*.ini
+
+# OS files
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Deployed Flutter web build (see docs/DUCKDNS_DEPLOYMENT.md)
+/app/

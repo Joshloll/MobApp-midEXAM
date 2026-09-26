@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The PHP API is served over plain HTTP from XAMPP. Android blocks cleartext
+  traffic by default, and domain-config entries cannot express IP ranges, so a
+  phone on the LAN (e.g. 192.168.x.x) needs cleartext allowed at the base level.
+  Switch to HTTPS and remove this override for a production deployment.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

@@ -1,0 +1,13 @@
+# Only the API (backend/api) and the Flutter web build (app/) are meant to be
+# public. Everything else in this folder is source code and must not be served
+# once the site is reachable from the internet (e.g. via DuckDNS).
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Hidden files and folders: .git, .env, .dart_tool, .idea, ...
+    RewriteRule (^|/)\. - [R=404,L]
+    # Source, platform, database and config folders
+    RewriteRule ^(android|ios|linux|macos|windows|web|lib|test|database|docs|build|backend/config)(/|$) - [R=404,L]
+    # Project files at the root
+    RewriteRule \.(ya?ml|lock|iml|md|sql|example)$ - [R=404,L]
+</IfModule>
+Options -Indexes
